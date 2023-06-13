@@ -67,5 +67,58 @@ console.log(sum);
 let name ="bob";
 let d= (name= "peter") ? "hello bob":"who are you?";
 console.log(d);
+// ninth
+let books=[
+    {name:" the great gatsby", author:"henry"},
+    {name:"gonegirl", auther:"levi"},
 
-const num
+]
+var author = 'henry';
+
+for (var b = 0; b < books.length; b++) {
+    if (books[b].title === 'The Great Gatsby') {
+        author = books[b].author;
+        break;
+    }
+}
+
+if (author !== '') {
+    console.log('The author of the book "The Great Gatsby" is: ' + author);
+} else {
+    console.log('Book not found.');
+}
+//tenth
+function calculatearea(length,width){
+    return(area=length*width)
+}
+console.log(calculatearea(4,5));
+// eleventh
+function printPrimesUpTo(n) {
+    function isPrime(num) {
+        /*if (num <= 1) {
+            return false;
+        }*/
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    for (let i = 2; i <= n; i++) {
+        if (isPrime(i)) {
+            console.log(i);
+        }
+    }
+}
+printPrimesUpTo(20);
+
+
+
+
+
+
+
+
+
+
