@@ -67,3 +67,5 @@ console.log(sum);
 let name ="bob";
 let d= (name= "peter") ? "hello bob":"who are you?";
 console.log(d);
+
+const num
